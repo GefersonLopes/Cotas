@@ -1,0 +1,8 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'variables.scss';
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $dark-color;
+}
