@@ -8,6 +8,6 @@ const Button = (props: any) => {
       {props.children}
     </button>
   );
-}
+};
 
 export default Button;
