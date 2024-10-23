@@ -12,7 +12,7 @@ const FormContainer = ({ children, title }: IProps) => {
       <Row className="justify-content-center">
         <Col md={8}>
           <div className="form-container">
-            <h2 className="text-center">{title}</h2>
+            <h2 className="ms-2">{title}</h2>
             {children}
           </div>
         </Col>

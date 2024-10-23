@@ -9,10 +9,10 @@ import GetCalculateQuotas from '../pages/findCalculateQuotas';
 const MainRouter: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<Company />} />
+      <Route path="/empresas" element={<Company />} />
       <Route path="/funcionarios" element={<Officials />} />
       <Route path="/funcionarios/:empresa_id" element={<GetOfficials />} />
-      <Route path="/calculadora" element={<Calculation />} />
+      <Route path="/" element={<Calculation />} />
       <Route path="/calculadora/:empresa_id" element={<GetCalculateQuotas />} />
     </Routes>
   );

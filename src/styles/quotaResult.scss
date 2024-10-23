@@ -1,0 +1,20 @@
+.quota-result-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #0d47a1;
+  border-radius: 10px;
+  color: #fff;
+  .quota-box {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+  }
+  .quota-value {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}

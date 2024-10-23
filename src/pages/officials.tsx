@@ -37,7 +37,7 @@ const Officials = () => {
   return (
     <FormContainer title="Registrar Funcionário à Empresa">
       <Form onSubmit={handleSubmit(onSubmit)}>
-        {fieldsToCreateOfficials.map((field) => (
+        {/* {fieldsToCreateOfficials.map((field) => (
           <FormField
             key={field.name}
             label={field.label}
@@ -51,7 +51,7 @@ const Officials = () => {
             name={field.name}
             {...propsCommon}
           />
-        ))}
+        ))} */}
 
         <Button type="submit" variant="success" className="w-100 mt-3">
           Registrar Funcionário

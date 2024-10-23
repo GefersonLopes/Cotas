@@ -1,10 +1,5 @@
 export const fieldsToCreateOfficials = [
   {
-    label: 'Id da empresa',
-    name: 'empresa_id',
-    type: 'number',
-  },
-  {
     label: 'Quantidade de aprendizes',
     name: 'qtd_aprendizes',
     type: 'number',
@@ -37,7 +32,6 @@ export const fieldsToCreateOfficials = [
 ];
 
 export const defaultValuesCreateOfficial = {
-  empresa_id: 1,
   qtd_aprendizes: 2,
   qtd_autonomo: 10,
   qtd_direcao: 5,

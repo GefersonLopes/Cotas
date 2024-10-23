@@ -39,7 +39,7 @@ const Company = () => {
   return (
     <FormContainer title="Registrar Empresa">
       <Form onSubmit={handleSubmit(onSubmit)}>
-        {fieldsCreateCompany.map((field) =>
+        {/* {fieldsCreateCompany.map((field) =>
           field.type === 'checkbox' ? (
             <FormCheckbox
               key={field.name}
@@ -67,7 +67,7 @@ const Company = () => {
               {...propsCommon}
             />
           ),
-        )}
+        )} */}
 
         <Button type="submit" variant="success" className="w-100">
           Registrar Empresa
