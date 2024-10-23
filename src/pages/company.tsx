@@ -16,7 +16,7 @@ import * as yup from 'yup';
 
 type FormData = yup.InferType<typeof schemaCreateNewCompany>;
 
-const Home = () => {
+const Company = () => {
   const {
     register,
     handleSubmit,
@@ -77,4 +77,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Company;

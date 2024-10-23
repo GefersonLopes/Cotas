@@ -1,5 +1,6 @@
 @use '~bootstrap/scss/bootstrap' as bootstrap;
 @use 'variables' as vars;
+@use 'reset' as *;
 
 body {
   font-family: vars.$font-family-base;

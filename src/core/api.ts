@@ -15,7 +15,7 @@ api.interceptors.request.use(
     return config;
   },
   (error) => {
-    setTimeout(() => useLoadingStore.getState().stopLoading(), 2000);
+    setTimeout(() => useLoadingStore.getState().stopLoading(), 1000);
     return Promise.reject(error);
   },
 );
@@ -23,7 +23,7 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => {
     if (response.data.error_code === 500) {
-      setTimeout(() => useLoadingStore.getState().stopLoading(), 2000);
+      setTimeout(() => useLoadingStore.getState().stopLoading(), 1000);
       toast.error('Ops! algo inesperado aconteceu');
       return response;
     }
@@ -33,14 +33,17 @@ api.interceptors.response.use(
       toast.error(response.data.error_message);
     }
 
-    setTimeout(() => useLoadingStore.getState().stopLoading(), 2000);
+    setTimeout(() => useLoadingStore.getState().stopLoading(), 1000);
     return response;
   },
   (error) => {
     if (error.response && error.response.status === 500) {
-      setTimeout(() => useLoadingStore.getState().stopLoading(), 2000);
+      setTimeout(() => useLoadingStore.getState().stopLoading(), 1000);
       toast.error('Ops! algo inesperado aconteceu');
     }
+
+    setTimeout(() => useLoadingStore.getState().stopLoading(), 1000);
+    toast.error(error.response.data.detail);
     return Promise.reject(error);
   },
 );
